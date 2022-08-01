@@ -2,6 +2,7 @@ function scoreChecker(score) {
   // Tulis kodingan dibawah ini
   const test1 = "Selamat !";
   const test2 = "Anda mendapatkan nilai";
+  let result = null;
   if (score >= 90) {
     result = `${test1} ${test2} A`;
   } else if (score >= 80) {
