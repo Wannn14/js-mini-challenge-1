@@ -1,6 +1,18 @@
 function scoreChecker(score) {
   // Tulis kodingan dibawah ini
-  result = 'A';
+  const test1 = "Selamat !";
+  const test2 = "Anda mendapatkan nilai";
+  if (score >= 90) {
+    result = `${test1} ${test2} A`;
+  } else if (score >= 80) {
+    result = `${test2} B`;
+  } else if (score >= 70) {
+    result = `${test2} C`;
+  } else if (score >= 60) {
+    result = `${test2} D`;
+  } else if (score < 60) {
+    result = `${test2} E`;
+  }
   return result;
 }
 
