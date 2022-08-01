@@ -1,9 +1,14 @@
 function isAnagram(word1, word2) {
   // Tulis kodingan dibawah ini
-  const hos1 = word1.toLowerCase().split("");
-  const hos2 = word2.toLowerCase().split("");
-  let result = hos1 == hos2;
-  return result;
+  let word1Arr = word1.split("");
+  let word2Arr = word2.split("");
+  let word1ArrSorted = word1Arr.sort();
+  let word2ArrSorted = word2Arr.sort();
+  if (word1ArrSorted.join("") === word2ArrSorted.join("")) {
+    console.log("True");
+  } else {
+    console.log("false");
+  }
 }
 
 // Test Case
